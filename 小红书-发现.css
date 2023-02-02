@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-size: 14px;
+    color: #333;
+    width: 100vw !important;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial, PingFang SC, PingFang TC, PingFang HK, Microsoft Yahei, Microsoft JhengHei;
+    overflow-y: hidden;
+
+}
+
+
+
+  /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: 'iconfont';  /* Project id 3868315 */
+    src: url('http://at.alicdn.com/t/c/font_3868315_ydblrn4i56.woff2?t=1675254450415') format('woff2'),
+         url('http://at.alicdn.com/t/c/font_3868315_ydblrn4i56.woff?t=1675254450415') format('woff'),
+         url('http://at.alicdn.com/t/c/font_3868315_ydblrn4i56.ttf?t=1675254450415') format('truetype');
+  }
+
+
+.page-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.nav-section {
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 72px;
+    z-index: 10;
+}
+
+.nav-logo {
+    width: 60px;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+    line-height: 14px;
+}
+
+.nav-active {
+    font-weight: 500;
+    color: #ff2442;
+
+}
+
+.nav-first {
+    margin-left: 0;
+
+}
+
+.nav-last {
+    margin-right: 0;
+}
+
+.user-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    width: 36.5px;
+    height: 36.5px;
+    border: .5px solid #ebebeb;
+    border-radius: 100%;
+}
+
+.user-logo {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.user-state {
+    position: absolute;
+    left: 16px;
+    top: -9px;
+    width: 42px;
+}
+
+
+
+
+.login{
+    display: none;
+}
+
+
+
+
+.login-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.login-wrapper {
+    display: flex;
+    position: relative;
+    width: 804px;
+    height: 478px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 60px 0;
+}
+
+.login-close {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    font-family: "iconfont";
+    font-size: 24px;
+    font-style: normal;
+
+}
+
+.login-logo-container{
+    width: 404px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-right: .5px solid rgba(0,0,0,.08);
+}
+
+.login-logo{
+    width: 148px;
+    height: 78px;
+}
+
+.login-qrcode-box{
+    position: relative;
+    margin: 32px 0;
+    width: 164px;
+    height: 164px;
+    line-height: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.login-qrcode{
+    width: 155px;
+    height: 155px;
+}
+
+.login-icon{
+    position: absolute;
+    left: 66.5px;
+    top: 66.5px;
+    width: 31px;
+    height: 31px;
+}
+
+.login-scan{
+    width: 284px;
+    height: 52px;
+}
+
+.login-form-container{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-title-box{
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login-form-box{
+    margin-top: 28px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+    height: 40px;
+    border-bottom: .5px solid rgba(0,0,0,.08);
+}
+
+.country-code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 48px;
+    height: 100%;
+    font-weight: 510;
+}
+
+.phone-input{
+    margin-left: 16px;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    flex: 1;
+    font-size: 18px;
+    width: 140px;
+    font-weight: 510;
+    height: 100%;
+}
+
+.login-form-code{
+margin-top: 16px;
+margin-bottom: 16px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 18px;
+line-height: 22px;
+color: #333;
+height: 40px;
+border-bottom: .5px solid rgba(0,0,0,.08);
+}
+
+.code-input{
+    flex: 1;
+    font-size: 18px;
+    width: 140px;
+    font-weight: 510;
+    height: 100%;
+    caret-color: #ff2442;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.code-btn{
+    font-size: 16px;
+    cursor: pointer;
+    color: rgba(255,36,66,.3);
+}
+
+.login-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    height: 40px;
+    background: rgba(0,0,0,.04);
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(51,51,51,.2);
+    appearance: none;
+    outline: none;
+    border: none;
+    text-transform: none;
+}
+
+.login-select-box{
+    width: 280px;
+    position: relative;
+    margin-top: 16px;
+    padding-left: 18px;
+    font-size: 12px;
+    color: rgba(51,51,51,.6);
+    line-height: 160%;
+}
+
+.login-select{
+    font-family: "iconfont";
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 2.5px;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+}
+
+.login-link{
+    color: #0e3765;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 88px;
+    min-height: 100vh;
+    width: 100vw;
+    min-width: 960px;
+    max-width: 100%;
+    background: #fff;
+}
+
+.card-container{
+    height: 3800px;
+    width: 1160px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+.card{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 216px;
+
+}
+
+.card1 {
+    transform: translate(0px, 0px);
+}
+
+.card2 {
+    transform: translate(236px, 0px);
+}
+
+.card3 {
+    transform: translate(472px, 0px);
+    
+}
+
+.card4 {
+    transform: translate(708px, 0px);
+    
+}
+
+.card5 {
+    transform: translate(944px, 0px);
+    
+}
+
+.card6 {
+    transform: translate(472px, 378px);
+    
+}
+
+.card7 {
+    transform: translate(708px, 378px);
+    
+}
+
+.card8 {
+    transform: translate(944px, 378px);
+    
+}
+
+.card9 {
+    transform: translate(0px, 400px);
+    
+}
+
+.card10 {
+    transform: translate(236px, 400px);
+    
+}
+
+.cover1{
+    height: 288px;
+    background: url("https://sns-img-hw.xhscdn.com/1000g0081rkno51cf805g5n7uisupevf8adc8jto?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+.cover2{
+    height: 288px;
+    background: url("https://sns-img-hw.xhscdn.com/d2d54066-f052-e073-6d25-756324d713d6?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+
+.cover3{
+    height: 288px;
+    background: url("https://sns-img-hw.xhscdn.com/1000g0081r9nt9egf60005on14n2nqmtqk2u4d4o?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+
+.cover4{
+    height: 288px;
+    background: url("https://sns-img-hw.xhscdn.com/1000g0081r5tl79kf206g5omg0ab3hsihvjf4ruo?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+
+.cover5{
+    height: 288px;
+    background: url("https://sns-img-hw.xhscdn.com/a5a8089c-d262-23db-1fa7-031659b4db21?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+
+.cover6{
+    height: 288px;
+    background: url("https://sns-img-hw.xhscdn.com/0844273c-e2c5-630d-8d28-688e84b3edca?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+
+.cover7{
+    height: 288px;
+    background: url("https://sns-img-hw.xhscdn.com/2a3a15fe-1c77-51f8-2d91-438c42bb967f?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+.cover8{
+    height: 287px;
+    background: url("https://sns-img-hw.xhscdn.com/f6efdc79-1865-64d3-cfc9-43f6957aaed6?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+.cover9{
+    height: 288px;
+    background: url("https://sns-img-hw.xhscdn.com/b3632819-6593-7932-ad8f-c10ed545ad79?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+.cover10{
+    height: 288px;
+    background: url("https://sns-img-hw.xhscdn.com/b96b4346-de40-07ee-bf74-054e8515a738?imageView2/2/w/648/format/webp") left top 100% / 100% no-repeat;
+}
+
+
+.card-cover{
+    position: relative;
+    width: 216px;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    outline: .5px solid rgba(0,0,0,.05);
+}
+
+.card-cont{
+    padding: 12px;
+}
+
+.card-title{
+    margin-bottom: 8px;
+    display: block;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
+}
+
+.card-author-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    color: #666;
+    font-size: 12px;
+}
+
+.card-author{
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+.card-author-avatar{
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: .5px solid #e6e6e6;
+}
+
+.card-author-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100px;
+    font-size: 12px;
+}
+
+.card-like-box{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.card-like{
+font-size: 12px;
+font-family: "iconfont";
+font-style: normal;
+}
+
+.card-like-count{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 2px;
+    max-width: 40px;
+}

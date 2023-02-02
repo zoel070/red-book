@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>wd 发现</title>
+    <link rel="stylesheet" href="./小红书-发现.css">
+</head>
+
+<body>
+    <div class="page-header">
+        <div class="nav-section">
+            <div class="logo-wrapper">
+                <img class="nav-logo"
+                    src="https://picasso-static.xiaohongshu.com/fe-platform/a2a93b9c02b4f6c8b6eb1e1accadcd5ce60c1de6.png"
+                    alt="none">
+            </div>
+            <div class="nav-wrapper">
+                <div class="nav-container">
+                    <span class="nav-item nav-first">首页</span>
+                    <span class="nav-item nav-active">发现</span>
+                    <span class="nav-item">业务合作</span>
+                    <span class="nav-item">创作者服务</span>
+                    <span class="nav-item">新闻中心</span>
+                    <span class="nav-item">关于我们</span>
+                    <span class="nav-item">社会责任</span>
+                    <span class="nav-item">加入我们</span>
+                    <span class="nav-item nav-last">中文</span>
+                </div>
+                <div class="user-container">
+                    <img class="user-logo"
+                        src="https://picasso-static.xiaohongshu.com/fe-platform/6c7494205379dff2d154f3d3800ac090e8a6a52b.png"
+                        alt="none">
+                    <img class="user-state"
+                        src="https://picasso-static.xiaohongshu.com/fe-platform/6e51e38fc6001e7d1b55aca54a5bbc1db0194556.png"
+                        alt="none">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-mainer">
+        <div class="login">
+            <div class="login-section">
+                <div class="login-wrapper">
+                    <i class="login-close">&#xe723;</i>
+                    <div class="login-logo-container">
+                        <img class="login-logo"
+                            src="https://picasso-static.xiaohongshu.com/fe-platform/b40942b023db46892660ffedb5b62617bc5606da.png"
+                            alt="none">
+                        <div class="login-qrcode-box">
+                            <img class="login-qrcode"
+                                src="data:image/png;base64,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"
+                                alt="none">
+                            <img class="login-icon"
+                                srcset="https://picasso-static.xiaohongshu.com/fe-platform/fdb37dfb3627d918f5eac10eaf8f25eb6e0668c8.png"
+                                alt="none">
+                        </div>
+                        <img class="login-scan"
+                            src="https://picasso-static.xiaohongshu.com/fe-platform/4be8f3703a739fae4d72f1015b6cd629b9dbb6b7.png"
+                            alt="none">
+                    </div>
+                    <div class="login-form-container">
+                        <div class="login-title-box">
+                            验证码登录
+                        </div>
+                        <div class="login-form-box">
+                            <div class="login-form-phone">
+                                <span class="country-code">+86</span>
+                                <input class="phone-input" placeholder="输入手机号" type="text">
+                            </div>
+                            <div class="login-form-code">
+                                <input class="code-input" placeholder="输入验证码" type="text">
+                                <span class="code-btn">发送验证码</span>
+                            </div>
+                            <button class="login-btn">登录</button>
+                        </div>
+                        <div class="login-select-box">
+                            <i class="login-select">&#xe600;</i>
+                            我已阅读并同意
+                            <a class="login-link" href="javascript:;">《用户协议》</a>
+                            <a class="login-link" href="javascript:;">《隐私政策》</a>
+                            <a class="login-link" href="javascript:;">《儿童/青少年个人信息保护规则》</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-section">
+            <div class="card-container">
+                <div class="card card1">
+                    <a class="card-cover cover1" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">考研中的细节</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">浪漫</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <a class="card-cover cover2" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">乱丢食物</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">融入</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <a class="card-cover cover3" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">考研中的细节</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">浪漫</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card4">
+                    <a class="card-cover cover4" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">考研中的细节</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">浪漫</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card5">
+                    <a class="card-cover cover5" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">考研中的细节</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">浪漫</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card6">
+                    <a class="card-cover cover6" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">考研中的细节</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">浪漫</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card7">
+                    <a class="card-cover cover7" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">考研中的细节</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">浪漫</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card8">
+                    <a class="card-cover cover8" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">考研中的细节</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">浪漫</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card9">
+                    <a class="card-cover cover9" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">考研中的细节</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">浪漫</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card10">
+                    <a class="card-cover cover10" href="javascript:;"></a>
+                    <div class="card-cont">
+                        <a class="card-title">考研中的细节</a>
+                        <div class="card-author-box">
+                            <a class="card-author" href="javascript:;">
+                                <img src="https://sns-avatar-qc.xhscdn.com/avatar/625e4af2942b9cb2055027d7.jpg?imageView2/2/w/60/format/webp"
+                                    class="card-author-avatar"></img>
+                                <span class="card-author-name">浪漫</span>
+                            </a>
+                            <div class="card-like-box">
+                                <i class="card-like">&#xe83f;</i>
+                                <span class="card-like-count">1k+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
